@@ -6,7 +6,7 @@ const topPlayed = [
 
 function renderTopPlayed() {
   const list = document.getElementById("top-played");
-  list.innerHTML = ""; // tyhjennä listaus
+  list.innerHTML = "";
   topPlayed.forEach(game => {
     const li = document.createElement("li");
     li.textContent = `${game.name} - ${game.players} players`;
